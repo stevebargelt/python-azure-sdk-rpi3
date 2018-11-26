@@ -6,6 +6,8 @@ RUN \
     apt-get install -y git && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN pip install --upgrade pip
+
 # Install Azure SDK
 RUN pip install azure
 
